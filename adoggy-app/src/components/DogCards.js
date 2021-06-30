@@ -42,7 +42,7 @@ function DogCards() {
                             style={{ backgroundImage: `url(${dog.imgUrl})`}}
                             className='card'>
                                 <h3>{dog.name}</h3>
-                                <h3>{dog.age}</h3>
+                                <h3>{`Age: ${dog.age}`}</h3>
                                 <h3>{dog.location}</h3>
                         </div>
                     </TinderCard>
