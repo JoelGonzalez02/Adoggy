@@ -13,6 +13,7 @@ function Header() {
             </IconButton>
             <IconButton>
                 <PetsIcon fontSize='large' className='pets-icon' />
+                <h1> Adopts</h1>
             </IconButton>
             <IconButton>
                 <BookmarksIcon fontSize='large' className='bookmark-icon' />

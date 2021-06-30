@@ -8,10 +8,10 @@ function SwipeButtons() {
     return (
         <div className='swipe-buttons'>
             <IconButton>
-                <ThumbUpIcon fontSize='large'/>
+                <ThumbDownIcon fontSize='large' className='thumbs-down'/>
             </IconButton>
             <IconButton>
-                <ThumbDownIcon fontSize='large'/>
+               <ThumbUpIcon fontSize='large' className='thumbs-up'/>
             </IconButton>
         </div>
     )

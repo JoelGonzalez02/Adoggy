@@ -1,23 +1,26 @@
-import React, {useState } from 'react';
+import React, {useState, useEffect } from 'react';
 import './DogCards.css';
 import TinderCard from 'react-tinder-card';
+// import axios from './axios';
+
+import axios from 'axios';
 
 function DogCards() {
-    const [dogs, setDogs] = useState([
-        {
-        name: 'Snoop Dogg',
-        url: "https://www.petguide.com/wp-content/uploads/2019/12/Miniature-Australian-Shepherd-668x446.jpg"
-        },
+    const [dogs, setDogs] = useState([]);
 
-        {
-            name: 'Notorious D.O.G',
-            url: 'https://cdn.shopify.com/s/files/1/0994/0236/articles/siberian-husky_2319x.jpg?v=1502391918'
+    useEffect(() => {
+        async function fetchData() {
+            const req = await axios.get('http://localhost:8001/adopts/card')
+
+            setDogs(req.data);
         }
-    ]);
+        fetchData()
+    }, []);
+
+    
 
     const swiped = (direction, nameToDelete) => {
         console.log('removing: ' + nameToDelete)
-        // setLastDirection(direction);
     } 
 
     const outOfFrame = (name) => {
@@ -36,9 +39,11 @@ function DogCards() {
                         onCardLeftScreen={() => outOfFrame(dog.name)}
                     >
                         <div
-                            style={{ backgroundImage: `url(${dog.url})`}}
+                            style={{ backgroundImage: `url(${dog.imgUrl})`}}
                             className='card'>
                                 <h3>{dog.name}</h3>
+                                <h3>{dog.age}</h3>
+                                <h3>{dog.location}</h3>
                         </div>
                     </TinderCard>
                 ))}
