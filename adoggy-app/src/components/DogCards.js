@@ -10,7 +10,7 @@ function DogCards() {
 
     useEffect(() => {
         async function fetchData() {
-            const req = await axios.get('http://localhost:8001/adopts/card')
+            const req = await axios.get('https://adopts-backend.herokuapp.com/adopts/card')
 
             setDogs(req.data);
         }
@@ -42,7 +42,7 @@ function DogCards() {
                             style={{ backgroundImage: `url(${dog.imgUrl})`}}
                             className='card'>
                                 <h3>{dog.name}</h3>
-                                <h3>{dog.age}</h3>
+                                <h3>{`Age: ${dog.age}`}</h3>
                                 <h3>{dog.location}</h3>
                         </div>
                     </TinderCard>

@@ -35,6 +35,30 @@
     -webkit-text-stroke: 1px black;
 }
 
+.card h3:nth-child(1) {
+    left: 0;
+}
+
+.card h3:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+}
+
+.card h3:nth-child(3) {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+}
+
 .dog-cards {
     height: 100%;
     width: 100%;
