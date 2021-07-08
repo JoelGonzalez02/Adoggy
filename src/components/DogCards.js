@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react';
 import './DogCards.css';
 import TinderCard from 'react-tinder-card';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 const key = 'p7rNFI2gUIoYHCWJMUUA5BAOoirnSfP30Dpny8c4ajQDtHPkyV';
 const secret = 'qAj2b76OKxznkKYP8RNfgpjJZxu3Kts8irMRf3qy';
@@ -11,10 +11,10 @@ const secret = 'qAj2b76OKxznkKYP8RNfgpjJZxu3Kts8irMRf3qy';
 
 function DogCards() {
 
-    const history = useHistory();
+    // const history = useHistory();
     const [token, setToken] = useState(null);
     const [results, setResults] = useState([]);
-    const [dogs, setDogs] = useState([]);
+    // const [dogs, setDogs] = useState([]);
 
 
     const getToken = async (req, res) => {
@@ -47,7 +47,7 @@ function DogCards() {
   
       const fetchPets = async () => {
         const petResults = await fetch(
-          "https://api.petfinder.com/v2/animals?location=90023",
+          "https://api.petfinder.com/v2/animals?location=90023&limit=50",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -77,7 +77,7 @@ function DogCards() {
       }
       console.log('res', results)
       
-    }, [token]);
+    }, [token, results]);
     if (results === null) return null;
   
 
