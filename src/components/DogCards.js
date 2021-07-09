@@ -47,7 +47,7 @@ function DogCards() {
   
       const fetchPets = async () => {
         const petResults = await fetch(
-          "https://api.petfinder.com/v2/animals?location=90023&limit=50",
+          "https://api.petfinder.com/v2/animals?location=90023&limit=40",
           {
             headers: {
               Authorization: `Bearer ${token}`,
