@@ -35,43 +35,7 @@ function App(props) {
   };
 
 
-  const fetchPets = async () => {
 
-  
-    const petResults = await fetch(
-      "https://api.petfinder.com/v2/animals?location=90023&limit=100",
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    );
-    const json = await petResults.json();
-    const res = json.animals;
-    const links = [];
-
-    
-
-
-      for (var i = 0; i < res.length; i ++) {
-          if (res[i].photos && res[i].photos[0] && res[i].photos[0].full) {
-              links.push(res[i])
-          } 
-      } 
-
-
-
-
-    // const size = 10;
-    // const ogData = links.slice(0, size);
-          
-    
-    setResults(links);
-    setCurrRes(links);
-    console.log('links', links)
-    console.log('token', token)
-    
-  };
 
 
   const showMoreAnimals = () => {
@@ -84,6 +48,45 @@ function App(props) {
     if (token === null) {
         getToken();
     }
+
+    const fetchPets = async () => {
+
+  
+      const petResults = await fetch(
+        "https://api.petfinder.com/v2/animals?location=90023&limit=100",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      const json = await petResults.json();
+      const res = json.animals;
+      const links = [];
+  
+      
+  
+  
+        for (var i = 0; i < res.length; i ++) {
+            if (res[i].photos && res[i].photos[0] && res[i].photos[0].full) {
+                links.push(res[i])
+            } 
+        } 
+  
+  
+  
+  
+      // const size = 10;
+      // const ogData = links.slice(0, size);
+            
+      
+      setResults(links);
+      setCurrRes(links);
+      console.log('links', links)
+      console.log('token', token)
+      
+    };
+  
 
     
     if (currRes.length === 0) {
