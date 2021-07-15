@@ -1,23 +1,12 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState } from 'react';
 import './DogCards.css';
-import { AuthContext } from '../App';
 import TinderCard from 'react-tinder-card';
-import SwipeButtons from './SwipeButtons';
-// import { useHistory } from 'react-router-dom';
-
-const key = 'p7rNFI2gUIoYHCWJMUUA5BAOoirnSfP30Dpny8c4ajQDtHPkyV';
-const secret = 'qAj2b76OKxznkKYP8RNfgpjJZxu3Kts8irMRf3qy';
-// const key = 'TzQe0DtZ8F1RkqwSU9LJlbZJVqZtmY5eGYXwXke4OeJWQyIRAD';
-// const secret = 'SxgQl0TYNDgtpglpBPGGmugrWFsz27ebjFWJmEVV';
-
 
 
 
 
 function DogCards(props) {
 
-    // const history = useHistory();
-    const [oldData, setOldData] = useState([]);
     const [counter, setCounter] = useState(0);
     // const [dogs, setDogs] = useState([]);
 

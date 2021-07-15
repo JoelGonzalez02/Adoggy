@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import DogCards from './components/DogCards';
-import SwipeButtons from './components/SwipeButtons';
 import './App.css';
 
 
