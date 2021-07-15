@@ -12,8 +12,8 @@ function Header() {
                 <PersonIcon fontSize='large' className='header-icon'/>
             </IconButton>
             <IconButton>
-                <PetsIcon fontSize='large' className='pets-icon' />
-                <h1> Adopts</h1>
+                <PetsIcon  className='pets-icon' />
+                <h1 className='logo'> Adopts</h1>
             </IconButton>
             <IconButton>
                 <BookmarksIcon fontSize='large' className='bookmark-icon' />

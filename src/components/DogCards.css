@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
+
+
+
+
+
 .card {
     border-radius: 60px;
     position: relative;
@@ -6,13 +13,17 @@
     padding: 20px;
     max-width: 80vw;
     height: 60vh;
-    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: #f64f5a62 5px 5px, #c471ed3d 10px 10px, #12c2e94d 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     background-size: cover;
     background-position: center;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    
 }
+
+
+
 
 .dog-cards-container {
     display: flex;
@@ -27,6 +38,7 @@
 
 .card h3 {
     position: absolute;
+    font-family: 'Zen', cursive;
     bottom: 0;
     margin: 10px;
     color: #fff;

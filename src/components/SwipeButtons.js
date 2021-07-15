@@ -3,13 +3,22 @@ import './SwipeButtons.css';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 import IconButton from '@material-ui/core/IconButton';
+import PageviewIcon from '@material-ui/icons/Pageview';
 
-function SwipeButtons() {
+
+
+const SwipeButtons = (props) => {
+    
+   
+
     return (
         <div className='swipe-buttons'>
-            <IconButton>
-                <ThumbDownIcon fontSize='large' className='thumbs-down'/>
-            </IconButton>
+            
+                <IconButton onClick={() => window.open(`${props.curr.url}`)}>
+                    <PageviewIcon fontSize='large' className='thumbs-down'/>
+                </IconButton>
+    
+            
             <IconButton>
                <ThumbUpIcon fontSize='large' className='thumbs-up'/>
             </IconButton>
