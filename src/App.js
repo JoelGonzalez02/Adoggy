@@ -12,7 +12,6 @@ function App(props) {
 
   const [token, setToken] = useState(null);
   const [results, setResults] = useState([]);
-  const [currRes, setCurrRes] = useState([]);
   const [showAnimals, setShowAnimals] = useState(1);
 
   const getToken = async (req, res) => {
@@ -39,7 +38,7 @@ function App(props) {
 
 
   const showMoreAnimals = () => {
-    setShowAnimals(showAnimals >= currRes.length ? showAnimals : showAnimals + 1)
+    setShowAnimals(showAnimals >= results.length ? showAnimals : showAnimals + 1)
   }
 
 
@@ -81,7 +80,6 @@ function App(props) {
             
       
       setResults(links);
-      setCurrRes(links);
       console.log('links', links)
       console.log('token', token)
       
@@ -89,14 +87,14 @@ function App(props) {
   
 
     
-    if (currRes.length === 0) {
+    if (results.length === 0) {
       fetchPets();
     };
     
     
     console.log('res', results)
     
-  }, [token, currRes]);
+  }, [token, results]);
   if (results === null) return null;
 
 
@@ -112,7 +110,7 @@ function App(props) {
       <div className="app">
 
         <Header />
-        <DogCards results={results} curr={currRes} moreAnimals = {showMoreAnimals} showAnimals={showAnimals} setAnimals={setShowAnimals}/>
+        <DogCards results={results} curr={results} moreAnimals = {showMoreAnimals} showAnimals={showAnimals} setAnimals={setShowAnimals}/>
         {/* <SwipeButtons curr={currRes} /> */}
       </div>
     
