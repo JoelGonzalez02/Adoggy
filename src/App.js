@@ -111,7 +111,6 @@ function App(props) {
 
         <Header />
         <DogCards results={results} curr={results} moreAnimals = {showMoreAnimals} showAnimals={showAnimals} setAnimals={setShowAnimals}/>
-        {/* <SwipeButtons curr={currRes} /> */}
       </div>
     
     
