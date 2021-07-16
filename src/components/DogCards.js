@@ -9,7 +9,7 @@ import SwipeButtons from './SwipeButtons';
 function DogCards(props) {
 
     const [counter, setCounter] = useState(0);
-    const history = useHistory();
+   
     // const [dogs, setDogs] = useState([]);
 
   
