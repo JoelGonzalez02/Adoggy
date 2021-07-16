@@ -1,6 +1,6 @@
 .swipe-buttons {
-    position: fixed;
-    bottom: 2vh;
+    position: absolute;
+    bottom: -15vh;
     left: 0vw;
     display: flex;
     width: 100%;
