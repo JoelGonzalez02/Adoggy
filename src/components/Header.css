@@ -13,28 +13,31 @@
 }
 
 .logo {
-    font-family: 'Zen', cursive ;
-    font-size: 55px;
+    font-family: 'Zen Loop', cursive;
+    font-size: 70px;
     background: #ef32d9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89fffd65, #ef32d954); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #89fffd, #ef32d9d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: .7px black;
+    /* -webkit-text-stroke: .7px black; */
 }
 
 .pets-icon {
     font-size: 45px !important;
-    
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.836);
     -webkit-text-stroke: 1px black;
 }
 
-/* .header-icon {
-    color: #89fffd9d;
-}
+
 
 .bookmark-icon {
-    color: #ef32d954;
-} */
+    color: rgba(0, 0, 0, 0.849);
+} 
+
+.header-icon {
+    color: rgba(0, 0, 0, 0.849);
+}

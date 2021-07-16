@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import './DogCards.css';
 import TinderCard from 'react-tinder-card';
-
+import { useHistory } from 'react-router-dom';
+import SwipeButtons from './SwipeButtons';
 
 
 
 function DogCards(props) {
 
     const [counter, setCounter] = useState(0);
+    const history = useHistory();
     // const [dogs, setDogs] = useState([]);
 
   
@@ -61,8 +63,11 @@ function DogCards(props) {
                                 <h3>{`Age: ${dog.age}`}</h3>
                                 <h3>{dog.gender}</h3>
                         </div>
+                    <SwipeButtons url={dog.url}/> 
                     </TinderCard> 
+                    
                 ))}
+              
             </div>
         </div>
     )
