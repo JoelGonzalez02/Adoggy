@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './DogCards.css';
 import TinderCard from 'react-tinder-card';
-import { useHistory } from 'react-router-dom';
 import SwipeButtons from './SwipeButtons';
 
 
