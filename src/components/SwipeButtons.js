@@ -14,7 +14,7 @@ const SwipeButtons = (props) => {
     return (
         <div className='swipe-buttons'>
             <div className='tooltip'>
-                <IconButton onClick={() => window.open(`${props.url}`)}>
+                <IconButton href={`${props.url}`}  target="_blank">
                     <span className='tooltiptext'>See my profile!</span>
                     <PageviewIcon fontSize='large' className='thumbs-down'/>
                 </IconButton>
