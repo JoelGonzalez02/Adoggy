@@ -39,6 +39,17 @@ function DogCards(props) {
 
   }
   
+  const nameFilter = (name) => {
+      var str = name;
+      if (str.length > 18) {
+          str = str.substring(0, 15)
+      }
+
+      if (/\d/.test(str)) {
+        return 'No name yet!'
+      }
+      return str
+  }
   
 
     return (
@@ -58,7 +69,7 @@ function DogCards(props) {
                         <div onDoubleClick={() => window.open(`${dog.url}`)}
                             style={{ backgroundImage: `url(${dog.photos[0].full})`, cursor: 'pointer'}}
                             className='card'>
-                                <h3>{dog.name}</h3>
+                                <h3>{nameFilter(dog.name)}</h3>
                                 <h3>{`Age: ${dog.age}`}</h3>
                                 <h3>{dog.gender}</h3>
                         </div>
