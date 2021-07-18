@@ -10,7 +10,7 @@ const SwipeButtons = (props) => {
     return (
         <div className='swipe-buttons'>
             <Button  className='page' startIcon={<PageviewIcon/>} style={{color: 'rgb(38, 64, 179)'}} >
-                <a href={`${props.url}`} target='_blank' style={{textDecoration: 'none'}}>View Profile</a>
+                <a href={`${props.url}`} target='_blank' rel="noreferrer" style={{textDecoration: 'none'}}>View Profile</a>
             </Button>
    
                 
