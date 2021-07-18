@@ -3,8 +3,6 @@ import Header from './components/Header';
 import DogCards from './components/DogCards';
 import './App.css';
 
-
-
 const key = 'p7rNFI2gUIoYHCWJMUUA5BAOoirnSfP30Dpny8c4ajQDtHPkyV';
 const secret = 'qAj2b76OKxznkKYP8RNfgpjJZxu3Kts8irMRf3qy';
 
@@ -34,9 +32,7 @@ function App(props) {
   };
 
 
-
-
-
+  
   const showMoreAnimals = () => {
     setShowAnimals(showAnimals >= results.length ? showAnimals : showAnimals + 1)
   }
@@ -71,22 +67,13 @@ function App(props) {
                 links.push(res[i])
             } 
         } 
-  
-  
-  
-  
-      // const size = 10;
-      // const ogData = links.slice(0, size);
-            
-      
+       
       setResults(links);
       console.log('links', links)
-      console.log('token', token)
-      
+      console.log('token', token)  
     };
   
-
-    
+  
     if (results.length === 0) {
       fetchPets();
     };
@@ -96,15 +83,6 @@ function App(props) {
     
   }, [token, results]);
   if (results === null) return null;
-
-
-
-
-  
-
-  
-
-
 
   return (
       <div className="app">

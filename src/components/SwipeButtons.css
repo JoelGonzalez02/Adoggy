@@ -12,19 +12,44 @@
 }
 
 
-.swipe-buttons .MuiIconButton-root {
+.swipe-buttons .MuiButton-root {
     background-color: white;
-    box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3) !important;
+    height: 55px;
+    width: 100px;
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px !important;
 }
+
+
+
+
+
+.page :hover {
+  color: rgb(71, 104, 255); 
+}
+
+.fav :hover {
+  color: #ff6cee;
+}
+
+
+
+
 
 .thumbs-up {
     
     color:  #ef32d9;
 }
 
-.thumbs-down {
-    color: rgb(38, 64, 179);
-}
+/* .thumbs-down {
+    color: rgb(38, 64, 179) !important;
+} */
 
 
 .tooltip {

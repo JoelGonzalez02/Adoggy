@@ -8,36 +8,33 @@
     background: #E0EAFC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #cfdef34b, #e0eafc3b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .logo {
-    font-family: 'Zen Loop', cursive;
-    font-size: 70px;
-    background: #ef32d9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89fffd, #ef32d9d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
+    font-family: 'Poiret One', cursive;
+    font-size: 60px;
+    background: rgb(38, 64, 179);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef32d9b2, #c471ed, rgb(38, 64, 179));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ef32d9b2, #c471ed, rgb(38, 64, 179)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* -webkit-text-stroke: .7px black; */
+    /* -webkit-text-stroke: .05px black; */
 }
 
 .pets-icon {
     font-size: 45px !important;
     margin-right: 20px;
-    color: rgba(0, 0, 0, 0.836);
-    -webkit-text-stroke: 1px black;
+    color: rgba(38, 64, 179, 0.842);
+    
 }
 
 
 
 .bookmark-icon {
-    color: rgba(0, 0, 0, 0.849);
+    color: rgba(10, 10, 10, 0.849);
 } 
 
 .header-icon {
-    color: rgba(0, 0, 0, 0.849);
+    color: rgba(10, 10, 10, 0.849);
 }
