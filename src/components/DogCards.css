@@ -47,11 +47,12 @@
     color: #fff;
     font-size: 25px;
     font-weight: bold;
-    -webkit-text-stroke: .5px black;
+    -webkit-text-stroke: .7px black;
 }
 
 .card h3:nth-child(1) {
-    left: 0;
+    left: 20px;
+    top: -8px;
     font-size: 27px;
 }
 

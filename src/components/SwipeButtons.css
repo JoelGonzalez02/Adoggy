@@ -12,6 +12,26 @@
 }
 
 
+.pIcon {
+  position: relative;
+  bottom: -5px;
+  left: -5px;
+}
+
+.pIcon2 {
+  position: relative;
+  left: -20px;
+  bottom: -15px;
+
+}
+
+.likeB {
+  position: relative;
+  top: -15px;
+  left: 10px;
+}
+
+
 .swipe-buttons .MuiButton-root {
     cursor: pointer;
     background-color: white;
@@ -30,13 +50,44 @@
 
 
 
+.page {
+    cursor: pointer;
+    background-color: white;
+    height: 55px;
+    width: 100px;
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px !important;
+}
+
 
 .page :hover {
-  color: rgb(71, 104, 255); 
+  color: rgb(130, 180, 255); 
+}
+
+
+.fav {
+    cursor: pointer;
+    background-color: white;
+    height: 55px;
+    width: 100px;
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px !important;
 }
 
 .fav :hover {
-  color: #ff6cee;
+  color: #e57eff;
 }
 
 
