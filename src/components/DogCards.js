@@ -8,6 +8,7 @@ import SwipeButtons from './SwipeButtons';
 function DogCards(props) {
 
     const [counter, setCounter] = useState(0);
+  
    
     // const [dogs, setDogs] = useState([]);
 
@@ -50,6 +51,8 @@ function DogCards(props) {
       }
       return str
   }
+
+
   
 
     return (
@@ -67,13 +70,13 @@ function DogCards(props) {
                         onCardLeftScreen={() => outOfFrame(dog.name)}
                     >
                         <div onDoubleClick={() => window.open(`${dog.url}`)}
-                            style={{ backgroundImage: `url(${dog.photos[0].full})`, cursor: 'pointer'}}
+                            style={{backgroundImage: `url(${dog.photos[0].full})`, cursor: 'pointer'}}
                             className='card'>
                                 <h3>{nameFilter(dog.name)}</h3>
                                 <h3>{`Age: ${dog.age}`}</h3>
                                 <h3>{dog.gender}</h3>
                         </div>
-                    <SwipeButtons url={dog.url}/> 
+                    <SwipeButtons url={dog.url} /> 
                     </TinderCard> 
                     
                 ))}
