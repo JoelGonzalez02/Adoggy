@@ -13,7 +13,7 @@ const SwipeButtons = (props) => {
                 <a href={`${props.url}`} target='_blank' rel="noreferrer" style={{textDecoration: 'none'}}>View Profile</a>
             </Button> */}
 
-            <button className='page'  style={{color: 'rgb(38, 64, 179)'}}>
+            <button  className='page' style={{color: 'rgb(38, 64, 179)', cursor: 'pointer'}}>
                 <div className='inButtons'>
                      
                      <a href={`${props.url}`} target='_blank' rel="noreferrer" style={{textDecoration: 'none'}}><PageviewIcon className='pIcon' />Profile</a>
