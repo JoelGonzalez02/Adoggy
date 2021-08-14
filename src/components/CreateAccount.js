@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FormGroup, Form, Input, Button } from "reactstrap";
 import * as yup from "yup";
-import { useHistory, Link } from "react-router-dom";
 
 
 
@@ -19,7 +18,7 @@ const CreateAccount = () => {
     const [user, setUser] = useState([]);
     const [errors, setErrors] = useState(initialState);
     const [isButtonDisabled, setIsButtonDisabled] = useState(true);
-    const history = useHistory();
+    
 
 
     // Yup Schema
@@ -51,16 +50,17 @@ const CreateAccount = () => {
       );
       schema.isValid(userForm).then((valid) => {
         console.log("is form valid?", valid);
+        console.log(isButtonDisabled, user);
         setIsButtonDisabled(!valid);
       });
-    }, [userForm]);
+    }, [userForm, schema]);
   
     const handleSubmit = (e) => {
       console.log("sign up form submitted");
       e.preventDefault();
       console.log("User Form", userForm);
-      axios
-        .post("https://adopts-backend.herokuapp.com/app/signup", userForm)
+      
+        axios.post("https://adopts-backend.herokuapp.com/app/signup", userForm)
         .then((res) => {
           console.log("res results", res.data);
           setUser(res.data);
