@@ -1,0 +1,52 @@
+.signupTop {
+  padding-bottom: 20px;
+}
+
+.signupBottom {
+  padding-top: 20px;
+}
+
+.signuph1 {
+  font-size: 30px;
+  color: white;
+}
+
+.signuph4 {
+  font-size: 20px;
+  color: white;
+}
+
+.loginh1 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.loginBottom {
+  padding-top: 20px;
+  color: white;
+}
+
+.searchButton {
+  padding-top: 10px;
+}
+
+.spacer {
+  padding-top: 15px;
+}
+
+.userHomePgh1 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  height: 15px;
+}
