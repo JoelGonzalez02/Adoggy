@@ -3,6 +3,7 @@ import Header from './components/Header';
 import DogCards from './components/DogCards';
 import './App.css';
 
+
 const key = 'p7rNFI2gUIoYHCWJMUUA5BAOoirnSfP30Dpny8c4ajQDtHPkyV';
 const secret = 'qAj2b76OKxznkKYP8RNfgpjJZxu3Kts8irMRf3qy';
 
@@ -46,7 +47,6 @@ function App(props) {
 
     const fetchPets = async () => {
 
-  
       const petResults = await fetch(
         "https://api.petfinder.com/v2/animals?location=90023&limit=100",
         {
@@ -60,8 +60,6 @@ function App(props) {
       const links = [];
   
       
-  
-  
         for (var i = 0; i < res.length; i ++) {
             if (res[i].photos && res[i].photos[0] && res[i].photos[0].full) {
                 links.push(res[i])
@@ -77,8 +75,7 @@ function App(props) {
     if (results.length === 0) {
       fetchPets();
     };
-    
-    
+
     console.log('res', results)
     
   }, [token, results]);

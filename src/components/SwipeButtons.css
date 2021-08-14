@@ -12,6 +12,8 @@
 }
 
 
+
+
 .pIcon {
   position: relative;
   bottom: -5px;
@@ -70,6 +72,11 @@
   color: rgb(130, 180, 255); 
 }
 
+.inButtons:hover {
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+}
+
 
 .fav {
     cursor: pointer;
@@ -90,10 +97,6 @@
   color: #e57eff;
 }
 
-
-
-
-
 .thumbs-up {
     
     color:  #ef32d9;
@@ -104,67 +107,9 @@
 } */
 
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 180px;
-    color: rgb(77, 65, 240);
-    text-align: center;
-    padding: 2px 0;
-    border-radius: 6px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -90px;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
 
-
-
-  .tooltip2 {
-    position: relative;
-    display: inline-block;
-    
-  }
   
-  /* Tooltip text */
-  .tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    width: 180px;
-    color: #ef32d9;
-    font-weight: bold;
-    text-align: center;
-    padding: 2px 0;
-    border-radius: 6px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -90px;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip2:hover .tooltiptext2 {
-    visibility: visible;
-  }
+
 
 
 

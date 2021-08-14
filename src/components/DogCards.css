@@ -51,8 +51,8 @@
 }
 
 .card h3:nth-child(1) {
-    left: 20px;
-    top: -8px;
+    left: 5px;
+    bottom: 0px;
     font-size: 27px;
 }
 
@@ -61,7 +61,7 @@
     bottom: 0;
     right: 20px;
     color: #fff;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
     /* -webkit-text-stroke: 1px black; */
 }
